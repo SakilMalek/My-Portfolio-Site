@@ -1,8 +1,9 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
+  { name: "Skills", link: "#skills" },
+  { name: "Certifications", link: "#certifications" },
 ];
 
 export const gridItems = [
@@ -72,146 +73,203 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "Food Delivery Website using MERN",
+    des: "I have build a Food Delivery App using the MERN stack (MongoDB, Express.js, React, Node.js), and I'm thrilled to share it with my network! 🍔🍕🍣",
+    img: "/p1.png",
+    iconLists: ["/mongo.svg", "/node.svg", "/express.svg", "/react.svg", "/js.svg"],
+    link: "https://food-delivery-app-mernapp.onrender.com/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Unite Classes",
+    des: "Built using ReactJS for a smooth and dynamic user experience , Students can effortlessly view materials categorized by class and subjects.",
+    img: "/p2.png",
+    iconLists: ["/mongo.svg", "/node.svg", "/express.svg", "/react.svg", "/app.svg"],
+    link: "https://unite-classes-frontend.onrender.com/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "AI Voice Assistant",
+    des: "Smart, Interactive, and Feature-Rich. I built an AI Voice Assistant that integrates cutting-edge technologies to provide a seamless and interactive experience. This assistant is designed to process voice commands efficiently, leveraging LLaMA 3 for intelligent responses and ADB (Android Debug Bridge) for mobile interactions.",
+    img: "/p3.png",
+    iconLists: ["/AI.png", "/ml.png", "/py.png"],
+    link: "https://github.com/SakilMalek/Voice-Assisstant",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "NewsBird- Latest News",
+    des: "I built an NewsBird Website using ReactJs and interactive loader and smooth & simple UI. It fetches the latest news from all over the world from different categories like Sports, Business, etc...",
+    img: "/p4.png",
+    iconLists: ["/re.svg", "/js.svg", "/node.svg"],
+    link: "https://github.com/SakilMalek/News-App-React-",
   },
+ 
 ];
 
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-];
 
-export const companies = [
+export const skills = [
   {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    img: "/skills/react.svg", // or from CDN
+    alt: "React"
   },
   {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    img: "/skills/nodejs.svg",
+    alt: "Node.js"
   },
   {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    img: "/skills/express.svg",
+    alt: "Express.js"
   },
   {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    img: "/skills/machine.svg", // or from CDN
+    alt: "Machine learning"
   },
   {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    img: "/skills/html5.svg",
+    alt: "HTML5"
+  },
+  {
+    img: "/skills/css3.svg",
+    alt: "CSS3"
+  },
+  {
+    img: "/skills/js.svg", // or from CDN
+    alt: "Javascript"
+  },
+  {
+    img: "/skills/tailwind.svg",
+    alt: "Tailwind"
+  },
+  {
+    img: "/skills/python.svg",
+    alt: "Python"
+  },
+  {
+    img: "/skills/mongodb.svg", // or from CDN
+    alt: "Mongo DB"
+  },
+  {
+    img: "/skills/nextjs.svg",
+    alt: "Next JS"
+  },
+  {
+    img: "/skills/bootstrap.svg",
+    alt: "Bootstrap"
   },
 ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Internship in Generative AI",
+    desc: "Successfully completed my 4-weeks internship with Flaunch Emerging Tech in Generative AI.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Internship in CodeTech IT Solutions",
+    desc: "Undergoing internship with CodeTech in Artificial Intelligence and Markup Language",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-  },
+  // {
+  //   id: 3,
+  //   title: "Freelance App Dev Project",
+  //   desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+  //   className: "md:col-span-2", // change to md:col-span-2
+  //   thumbnail: "/exp3.svg",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Lead Frontend Developer",
+  //   desc: "Developed and maintained user-facing features using modern frontend technologies.",
+  //   className: "md:col-span-2",
+  //   thumbnail: "/exp4.svg",
+  // },
 ];
 
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link:"https://github.com/SakilMalek"
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/insta.svg",
+    link:"https://www.instagram.com/shakilmalek111/",
+
   },
   {
     id: 3,
+    link:"https://www.linkedin.com/in/malekshakil111/",
     img: "/link.svg",
   },
+];
+
+
+export const certifications = [
+  {
+    title: "Introduction to Front-End Development",
+    description: "Issued by Coursera · Nov 2023",
+    img: "/certificates/frontend.jpg",
+    link: "https://www.coursera.org/account/accomplishments/certificate/EJLCXJVDQBBY",
+  },
+  {
+    title: "Core JAVA",
+    description: "Authorize by LearnQuest and offered by Coursera · April 2024",
+    img: "/certificates/core-java.jpg",
+    link: "https://www.coursera.org/account/accomplishments/certificate/KYK49P8Q5JJYf",
+  },
+  {
+    title: "Programming with JavaScript",
+    description: "Authorize by Meta and offered by Coursera · Nov 2023",
+    img: "/certificates/JS.jpg",
+    link: "https://www.coursera.org/account/accomplishments/certificate/KYK49P8Q5JJYf",
+  },
+  {
+    title: "Introduction to OOPs with JAVA",
+    description: "Authorize by LearnQuest and offered by oursera · April 2024",
+    img: "/certificates/OOP.jpg",
+    link: "https://www.coursera.org/account/accomplishments/certificate/KYK49P8Q5JJYf",
+  },
+  {
+    title: "Internship with Flaunch Emerging Tech",
+    description: "Organized in partnership with AICTE & 1M1B Foundation · Oct - Nov 2024 ",
+    img: "/certificates/flaunch.jpg",
+    link: "",
+  },
+  {
+    title: "Certificate of Completion",
+    description: "Successfully completed the Advance Course in Code Unnati Program by SAP · March 2025",
+    img: "/certificates/CU_AC.jpg",
+    link: "https://codeunnati.edunetfoundation.com/verify-certificate/CU25_19207"
+  }
+  ,  {
+    title: "Code Unnati Innovation Marathon 2024-25",
+    description: "Successfully participated in Code Unnati Innovation Marathon and build project AI Voice Assistant",
+    img: "/certificates/marathon.jpg",
+    link: ""
+  },
+  {
+    title: "",
+    description: "",
+    img: "",
+    link: ""
+  },
+  {
+    title: "",
+    description: "",
+    img: "",
+    link: ""
+  }
+  ,  {
+    title: "",
+    description: "",
+    img: "",
+    link: ""
+  },
+
+  // Add more as needed
 ];
