@@ -5,7 +5,7 @@ import MagicButton from './ui/MagicButton';
 import { FaLocationArrow } from 'react-icons/fa';
 import Link from 'next/link';
 
-const hero = () => {
+const Hero = () => {
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center pb-20 pt-36">
       {/* Spotlight Effects */}
@@ -38,4 +38,4 @@ const hero = () => {
   
 }
 
-export default hero
+export default Hero

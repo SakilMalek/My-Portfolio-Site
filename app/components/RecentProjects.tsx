@@ -5,7 +5,6 @@ import React from 'react';
 import { PinContainer } from './ui/3d-pin';
 import { FaLocationArrow } from 'react-icons/fa';
 
-
 const RecentProjects = () => {
   return (
     <div className='py-20' id='projects'>
@@ -70,15 +69,17 @@ const RecentProjects = () => {
                   ))}
                 </div>
                 {/* Remove the nested <Link> and use a button or div instead */}
-                <div
-                  className='flex items-center cursor-pointer'
-                  onClick={() => window.open(link, '_blank')}
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center cursor-pointer"
                 >
-                  <p className='lg:text-xl md:text-xs text-sm text-purple'>
+                  <p className="lg:text-xl md:text-xs text-sm text-purple">
                     Check Live Site
                   </p>
-                  <FaLocationArrow className='ms-3' color='#CBACF9' />
-                </div>
+                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                </a>
               </div>
             </PinContainer>
           </div>
