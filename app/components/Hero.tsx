@@ -29,7 +29,7 @@ const Hero = () => {
           words="Transforming Concepts into Seamless User Experience"
         />
                 <p className="md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-          Hi! I&apos;m Sakil, a Web Developer based in India.
+          Hi! I&apos;m Sakil Malek, a Web Developer based in India.
         </p>
         <Link href="#about"><MagicButton title='Show my work' icon={<FaLocationArrow/>} position={'right'}/></Link> 
       </div>
