@@ -1,12 +1,8 @@
- 
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import { FaHome } from "react-icons/fa";
 import Hero from "./components/Hero";
 import { FloatingNav } from "./components/ui/FloatingNav";
 import Grid from "./components/Grid";
 import RecentProjects from "./components/RecentProjects";
 import { certifications, navItems, skills } from "@/data";
-import { main } from "framer-motion/client";
 import Experience from "./components/Experience";
 import Approach from "./components/Approach";
 import Footer from "./components/Footer";
