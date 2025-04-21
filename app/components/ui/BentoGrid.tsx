@@ -1,10 +1,13 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-"use client";
 
+"use client";
+import dynamic from 'next/dynamic';
 import { useEffect, useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import Image from "next/image";
-import Lottie from "react-lottie";
+const Lottie = dynamic(
+  () => import('react-lottie'), // or import lottie-web directly
+  { ssr: false }
+);
 
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
@@ -53,8 +56,12 @@ export const BentoGridItem = ({
   const leftLists = ["ReactJS", "Express", "Typescript"];
   const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
 
+  const [isMounted, setIsMounted] = useState(false); 
   const [copied, setCopied] = useState(false);
   // const [clipboardSupported, setClipboardSupported] = useState(false);
+  useEffect(() => {
+    setIsMounted(true); // Set to true after mount
+  }, []);
 
   const defaultOptions = {
     loop: copied,
@@ -179,11 +186,12 @@ export const BentoGridItem = ({
 
           {id === 6 && (
             <div className="mt-5 relative">
-              <div
+              {isMounted && (<div
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"}`}
               >
                 <Lottie options={defaultOptions} height={200} width={400} />
-              </div>
+              </div>)}
+              
 
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}

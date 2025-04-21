@@ -59,8 +59,9 @@ export const StickyScroll = ({
       linearGradients[activeCard % linearGradients.length]
     );
   }, [activeCard, linearGradients]);
+{
 
-  return (
+      return (
 <section className="w-full py-3" id="certifications">
 <h1 className="heading pb-10">
         My <span className="text-purple">Certifications</span>
@@ -147,4 +148,7 @@ export const StickyScroll = ({
 
 
   );
+  }
+
+
 };
